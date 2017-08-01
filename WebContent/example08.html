@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>Example08 - Switch case</title>
+		<script type="text/javascript">
+			function checkCity(){
+				switch (document.frmCity.txtCity.value){
+					case "nikon":
+						alert("headquartered in Tokyo, Japan")
+						break;
+					case "philips":
+						alert("headquartered in Amsterdam, Netherland");
+						break;
+					case "hp":
+						alert("headquartered in California, United States");
+						break;
+						
+					default: alert("not valid");
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<form name="frmCity">
+			Choose Your City:<br> nikon/philips/hp:
+			<input type="text" name="txtCity" /><br><br>
+			<input type="button" value="Check city" onclick="checkCity()" />
+		</form>
+	</body>
+</html>

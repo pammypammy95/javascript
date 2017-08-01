@@ -1,0 +1,23 @@
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Example 02 - Using the "Arguments" Variable</title>
+		<script>
+			function add(){
+				var sum = 0;
+				
+				for(var i = 0; i < arguments.length; i++){
+					sum += argument[i];
+				}
+				return sum;
+			}
+		</script>
+	</head>
+	<body>
+		<script>
+			document.write(add(1, 2, 3, 4, 5) + "<br>");
+			document.write(add(1, 2) + "<br>");
+			document.write(add(1.1, "2.2") + "<br>");
+		</script>
+	</body>
+</html>

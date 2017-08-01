@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>Example06 - Hiding or Showing Objects</title>
+		<script type="text/javascript">
+			function ShowHide(){
+				if(!document.getElementById)
+					return;
+				
+				var head1 = document.getElementById("head11");
+				var head2 = document.getElementById("head22");
+				var showhead1 = document.form1.head1.checked;
+				var showhead2 = document.form1.head2.checked;
+				head1.style.visibility = (showhead1) ? "visible" : "hidden";
+				head2.style.visibility = (showhead2) ? "visible" : "hidden";
+			}
+		</script>
+	</head>
+	<body>
+		<h1 id="head11">This is the first heading</h1>
+		<h1 id="head22">This is the second heading</h1>
+		<form action="" name="form1">
+			<div>
+				<input type="checkbox" name="head1" onclick="ShowHide()" />
+				<span style="font-weight:bold">Show first heading</span><br/>
+				<input type="checkbox" name="head2" onclick="ShowHide()" />
+				<span style="font-weight:bold">Show second heading</span><br/>
+			</div>
+		</form>
+	</body>
+</html>

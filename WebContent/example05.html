@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>Example05 - Input From User</title>
+		<script type="text/javascript">
+			function welcome(){
+				var first = document.getElementById("FirstName").value;
+				var welcomeF = "Welcome " + first;
+				console.log(welcomeF);
+				window.alert(welcomeF);
+				return false;	//to prevent it from going into next page
+			}
+		</script>
+	</head>
+	<body>
+		<label for="FirstName">First Name:</label>
+		<input type="text" id="FirstName" name="fistName" placeholder="Your First Name"><br>
+		<button type="submit" onclick="welcome()">Chick Me</button>
+	</body>
+</html>
